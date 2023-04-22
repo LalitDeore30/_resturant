@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restaurant</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <div id="logo"><img src="logo.png" />GRAND</div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="">Services</a></li>
+      </ul>
+    </nav>
+    <div class="flex">
+      <div class="container">
+        <h2>Reservation Table</h2>
+        <form action="submit-reservation.php" method="post">
+          <div class="item">
+            <div class="txt">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="radius"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <br />
+            <div class="txt">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="radius"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <br />
+            <div class="txt no">
+              <label for="guests">No. of Guests:</label>
+              <input
+                type="number"
+                class="radius"
+                id="guests"
+                name="guests"
+                min="1"
+                max="10"
+                required
+              />
+            </div>
+            <br />
+            <div class="txt">
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                class="radius"
+                id="phone"
+                name="phone"
+                required
+              />
+            </div>
+            <br />
+            <div class="txt">
+              <label for="date">Date : </label>
+              <input
+                type="date"
+                class="radius"
+                id="date"
+                name="date"
+                required
+              />
+            </div>
+            <br />
+            <div class="txt time">
+              <label for="time">Time:</label>
+              <input
+                type="time"
+                class="radius"
+                id="time"
+                name="time"
+                required
+              />
+            </div>
+            <br />
+            <button type="submit">
+              <a href="successfull.html" class="white">Submit Reservation</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
